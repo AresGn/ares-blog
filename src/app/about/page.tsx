@@ -4,58 +4,52 @@ import { config } from "@/config";
 import { signOgImageUrl } from "@/lib/og-image";
 import Markdown from "react-markdown";
 
-const content = `# About Me
+const content = `# À Propos
 
 ![Arès GNIMAGNON](/images/image1)
 
-Hi, I'm **Arès GNIMAGNON**, an independent freelance developer with a degree in computer science and telecommunications. My passion for aesthetics and design excellence drives me to create my own UI/UX mockups for web and mobile projects before writing a single line of code. This approach ensures that functionality and beauty evolve together harmoniously.
+Salut, je suis **Arès GNIMAGNON**, un développeur freelance indépendant diplômé en informatique et télécommunications. Ma passion pour l'esthétique et l'excellence du design me pousse à créer mes propres maquettes UI/UX pour les projets web et mobiles avant d'écrire une seule ligne de code. Cette approche garantit que la fonctionnalité et la beauté évoluent ensemble harmonieusement.
 
-## Who I Am
+## Qui Je Suis
 
-I am a **Mobile Developer** with expertise in **UI/UX design**. Working with me means your brand identity is in good hands. Each project I undertake is meticulously crafted to reflect your values and meet your requirements. I believe that design is not just about appearance, but also functionality.
+Je suis un **Développeur Mobile** avec une expertise en **design UI/UX**. Travailler avec moi signifie que l'identité de votre marque est entre de bonnes mains. Chaque projet que j'entreprends est méticuleusement conçu pour refléter vos valeurs et répondre à vos exigences. Je crois que le design ne concerne pas seulement l'apparence, mais aussi la fonctionnalité.
 
 ![Arès GNIMAGNON](/images/image2)
 
-I am a passionate developer who enjoys solving complex problems and creating exceptional user experiences. I use my skills to create revolutionary products that can transform the way we live by solving concrete challenges. I constantly explore new technologies to stay ahead in this ever-evolving digital landscape.
+Je suis un développeur passionné qui aime résoudre des problèmes complexes et créer des expériences utilisateur exceptionnelles. J'utilise mes compétences pour créer des produits révolutionnaires qui peuvent transformer notre façon de vivre en résolvant des défis concrets. J'explore constamment de nouvelles technologies pour rester en avance dans ce paysage numérique en constante évolution.
 
-## My Journey
+## Mon Parcours
 
-Currently, I'm expanding my expertise into **cybersecurity** and aim to specialize in **penetration testing** within the next few years. This evolution represents my commitment to understanding technology from all angles - not just building secure applications, but also understanding how to protect them from emerging threats.
+Actuellement, j'élargis mon expertise vers la **cybersécurité** et j'ai pour objectif de me spécialiser dans les **tests de pénétration** d'ici quelques années. Cette évolution représente mon engagement à comprendre la technologie sous tous les angles - non seulement construire des applications sécurisées, mais aussi comprendre comment les protéger contre les menaces émergentes.
 
-## Personal Details
+## Centres d'Intérêt
 
-- **Age:** 23
-- **Location:** Godomey, Benin
-- **Email:** contact@aresgn.tech
+Quand je ne code pas ou ne conçois pas, vous me trouverez en train de :
+- **Écrire des articles de blog tech** - Partager des connaissances et des insights avec la communauté des développeurs
+- **Écouter des livres audio** - Apprendre constamment et élargir mes horizons
+- **Faire du fitness** - Maintenir un équilibre sain entre l'esprit et le corps
 
-## Hobbies & Interests
+## Connectons-nous
 
-When I'm not coding or designing, you'll find me:
-- **Writing tech blog posts** - Sharing knowledge and insights with the developer community
-- **Listening to audiobooks** - Constantly learning and expanding my horizons
-- **Fitness** - Maintaining a healthy balance between mind and body
+Ce blog est l'endroit où je partage mon parcours, mes insights techniques et mes réflexions sur le monde en constante évolution de la technologie. Que vous soyez ici pour apprendre sur le développement mobile, le design UI/UX ou la cybersécurité, j'espère que vous trouverez de la valeur dans mon contenu.
 
-## Let's Connect
+N'hésitez pas à me contacter si vous souhaitez collaborer ou simplement discuter de technologie !
 
-This blog is where I share my journey, technical insights, and thoughts on the ever-evolving world of technology. Whether you're here to learn about mobile development, UI/UX design, or cybersecurity, I hope you find value in my content.
-
-Feel free to reach out if you'd like to collaborate or just have a chat about technology!
-
-Best regards,
+Cordialement,
 
 **Arès GNIMAGNON**`;
 
 export async function generateMetadata() {
   return {
-    title: "About Me",
-    description: "Learn more about Arès GNIMAGNON - Mobile Developer, UI/UX Designer, and aspiring Cybersecurity Specialist from Benin",
+    title: "À Propos",
+    description: "Découvrez Arès GNIMAGNON - Développeur Mobile, Designer UI/UX et futur spécialiste en Cybersécurité du Bénin",
     openGraph: {
-      title: "About Me",
-      description: "Learn more about Arès GNIMAGNON - Mobile Developer, UI/UX Designer, and aspiring Cybersecurity Specialist from Benin",
+      title: "À Propos",
+      description: "Découvrez Arès GNIMAGNON - Développeur Mobile, Designer UI/UX et futur spécialiste en Cybersécurité du Bénin",
       images: [
         signOgImageUrl({
           title: "Arès GNIMAGNON",
-          label: "About Me",
+          label: "À Propos",
           brand: config.blog.name,
         }),
       ],

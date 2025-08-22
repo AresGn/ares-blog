@@ -23,12 +23,12 @@ import { z } from "zod";
 import { wisp } from "@/lib/wisp";
 
 const formSchema = z.object({
-  author: z.string().min(1, "Name is required"),
-  email: z.string().email("Invalid email address"),
+  author: z.string().min(1, "Le nom est requis"),
+  email: z.string().email("Adresse email invalide"),
   url: z
-    .union([z.string().url("Please enter a valid URL"), z.string().max(0)])
+    .union([z.string().url("Veuillez entrer une URL valide"), z.string().max(0)])
     .optional(),
-  content: z.string().min(1, "Comment cannot be empty"),
+  content: z.string().min(1, "Le commentaire ne peut pas être vide"),
   allowEmailUsage: z.boolean(),
 });
 
@@ -102,7 +102,7 @@ export function CommentForm({ slug, config, onSuccess }: CommentFormProps) {
     } catch (e) {
       if (e instanceof Error) {
         toast({
-          title: "Error",
+          title: "Erreur",
           description: e.message,
           variant: "destructive",
         });
