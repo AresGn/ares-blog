@@ -6,36 +6,55 @@ import Markdown from "react-markdown";
 
 const content = `# About Me
 
-![Samantha](https://imagedelivery.net/lLmNeOP7HXG0OqaG97wimw/clvlugru90000o4g8ahxp069s/db7abbe3-aa5c-433e-a16d-cbf137d1c9e5.png/public)
+![Arès GNIMAGNON](/images/image1)
 
-Hey there! I'm Samantha, a 28-year-old former corporate warrior who decided to ditch the 9-to-5 grind and embark on an adventure of a lifetime. After years of hustling in a high-pressure job, I realized that life is too short to be stuck in an office, staring at spreadsheets all day.
+Hi, I'm **Arès GNIMAGNON**, an independent freelance developer with a degree in computer science and telecommunications. My passion for aesthetics and design excellence drives me to create my own UI/UX mockups for web and mobile projects before writing a single line of code. This approach ensures that functionality and beauty evolve together harmoniously.
 
-So I took a leap of faith, quit my cushy job in Singapore, and decided to see the world on my own terms. No more stuffy meetings or rigid schedules – just me, my backpack, and an open road ahead.
+## Who I Am
 
-![Samantha](https://imagedelivery.net/lLmNeOP7HXG0OqaG97wimw/clvlugru90000o4g8ahxp069s/6b080e65-2329-4a36-ad5c-0a6af8d9aeb1.png/public)
+I am a **Mobile Developer** with expertise in **UI/UX design**. Working with me means your brand identity is in good hands. Each project I undertake is meticulously crafted to reflect your values and meet your requirements. I believe that design is not just about appearance, but also functionality.
 
-This blog is where I'll be documenting my travels, sharing my experiences, and hopefully inspiring others to follow their wanderlust. From trekking through remote villages to savoring local cuisines, I'm on a mission to immerse myself in different cultures and create memories that will last a lifetime.
+![Arès GNIMAGNON](/images/image2)
 
-But this journey isn't just about checking off destinations from a bucket list. It's about self-discovery, personal growth, and finding the courage to live life on my own terms. I'll be honest and raw, sharing the highs and lows, the moments of pure bliss and the inevitable challenges that come with solo travel.
+I am a passionate developer who enjoys solving complex problems and creating exceptional user experiences. I use my skills to create revolutionary products that can transform the way we live by solving concrete challenges. I constantly explore new technologies to stay ahead in this ever-evolving digital landscape.
 
-So join me on this adventure, and let's explore the world together! Who knows, maybe my stories will inspire you to take that leap of faith and pursue your own dreams, whatever they may be.
+## My Journey
 
-Let's go on an adventure!
+Currently, I'm expanding my expertise into **cybersecurity** and aim to specialize in **penetration testing** within the next few years. This evolution represents my commitment to understanding technology from all angles - not just building secure applications, but also understanding how to protect them from emerging threats.
 
-Love,
+## Personal Details
 
-Samantha`;
+- **Age:** 23
+- **Location:** Godomey, Benin
+- **Email:** contact@aresgn.tech
+
+## Hobbies & Interests
+
+When I'm not coding or designing, you'll find me:
+- **Writing tech blog posts** - Sharing knowledge and insights with the developer community
+- **Listening to audiobooks** - Constantly learning and expanding my horizons
+- **Fitness** - Maintaining a healthy balance between mind and body
+
+## Let's Connect
+
+This blog is where I share my journey, technical insights, and thoughts on the ever-evolving world of technology. Whether you're here to learn about mobile development, UI/UX design, or cybersecurity, I hope you find value in my content.
+
+Feel free to reach out if you'd like to collaborate or just have a chat about technology!
+
+Best regards,
+
+**Arès GNIMAGNON**`;
 
 export async function generateMetadata() {
   return {
     title: "About Me",
-    description: "Learn more about Samantha and her travel adventures",
+    description: "Learn more about Arès GNIMAGNON - Mobile Developer, UI/UX Designer, and aspiring Cybersecurity Specialist from Benin",
     openGraph: {
       title: "About Me",
-      description: "Learn more about Samantha and her travel adventures",
+      description: "Learn more about Arès GNIMAGNON - Mobile Developer, UI/UX Designer, and aspiring Cybersecurity Specialist from Benin",
       images: [
         signOgImageUrl({
-          title: "Samantha",
+          title: "Arès GNIMAGNON",
           label: "About Me",
           brand: config.blog.name,
         }),
