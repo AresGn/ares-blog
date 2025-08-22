@@ -1,5 +1,5 @@
 import { BlogPostContent } from "@/components/BlogPostContent";
-import { CommentSection } from "@/components/CommentSection";
+import { CommentsSection } from "@/components/comments-section";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { RelatedPosts } from "@/components/RelatedPosts";
@@ -77,7 +77,7 @@ const Page = async (props: { params: Promise<Params> }) => {
         <div className="max-w-prose mx-auto text-xl">
           <BlogPostContent post={result.post} />
           <RelatedPosts posts={posts} />
-          <CommentSection slug={slug} />
+          <CommentsSection postId={slug} />
         </div>
         <Footer />
       </div>
