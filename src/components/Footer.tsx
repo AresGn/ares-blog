@@ -15,7 +15,7 @@ export const Footer: FunctionComponent = () => {
         </div>
         <div className="text-xs text-muted-foreground hidden lg:block">
           <Link
-            href="https://kloo.me/Ares-GNIMAGNON"
+            href="https://aresgn.sinda.pro/en"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -48,7 +48,7 @@ export const Footer: FunctionComponent = () => {
       </div>
       <div className="text-xs text-muted-foreground lg:hidden">
         <Link
-          href="https://kloo.me/Ares-GNIMAGNON"
+          href="https://aresgn.sinda.pro/en"
           target="_blank"
           rel="noopener noreferrer"
         >
