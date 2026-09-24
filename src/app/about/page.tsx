@@ -4,48 +4,45 @@ import { config } from "@/config";
 import { signOgImageUrl } from "@/lib/og-image";
 import Markdown from "react-markdown";
 
-const content = `# À Propos
+const content = `# À propos
 
 ![Arès GNIMAGNON](/images/image1)
 
-Salut, je suis **Arès GNIMAGNON**, un développeur freelance indépendant diplômé en informatique et télécommunications. Ma passion pour l'esthétique et l'excellence du design me pousse à créer mes propres maquettes UI/UX pour les projets web et mobiles avant d'écrire une seule ligne de code. Cette approche garantit que la fonctionnalité et la beauté évoluent ensemble harmonieusement.
+Je suis **Arès GNIMAGNON**, fondateur et Directeur Général de **[SINDA SARL](https://www.sinda.pro/)**, ingénieur logiciel et pentesteur web en devenir, basé à Godomey, au Bénin.
 
-## Qui Je Suis
+Je dirige SINDA, groupe d'ingénierie numérique et éditeur SaaS B2B/B2G, et j'écris encore le code. Notre conviction : bâtir les infrastructures numériques dont l'Afrique a vraiment besoin, en commençant par l'éducation.
 
-Je suis un **Développeur Mobile** avec une expertise en **design UI/UX**. Travailler avec moi signifie que l'identité de votre marque est entre de bonnes mains. Chaque projet que j'entreprends est méticuleusement conçu pour refléter vos valeurs et répondre à vos exigences. Je crois que le design ne concerne pas seulement l'apparence, mais aussi la fonctionnalité.
+## Ce que je construis
+
+- **[StageConnect](https://www.stageconnect.app/)** : la gestion des stages pour les universités et les entreprises. Un pilote 2026-2027 est en préparation avec des universités privées du Bénin.
+- **[OrientBot](https://orientbot.sinda.pro/)** : un conseiller d'orientation par IA pour les nouveaux bacheliers, avec ses premiers clients payants dès le lancement.
+- **[BudgetVox](https://budgetvox-app.sinda.pro/)** : un budget personnel qui se tient à la voix, bientôt en bêta.
+
+Chez M&T Tech, j'ai aussi développé SchooLine, une plateforme de gestion scolaire multi-écoles, et le frontend de M&T Tours. Toutes mes études de cas sont sur **[mon portfolio](https://aresgn.sinda.pro/en)**.
 
 ![Arès GNIMAGNON](/images/image2)
 
-Je suis un développeur passionné qui aime résoudre des problèmes complexes et créer des expériences utilisateur exceptionnelles. J'utilise mes compétences pour créer des produits révolutionnaires qui peuvent transformer notre façon de vivre en résolvant des défis concrets. J'explore constamment de nouvelles technologies pour rester en avance dans ce paysage numérique en constante évolution.
+## Mon parcours
 
-## Mon Parcours
+Licence en informatique et télécommunications à l'INSTI Lokossa, puis développeur mobile (Flutter) et web (Next.js). Je prépare aujourd'hui un **Master 2 en Sécurité des Systèmes d'Information** à PIGIER Bénin : OWASP Top 10, Burp Suite, audit de code. Mon objectif : des produits solides dès leur conception, et savoir les tester comme un attaquant.
 
-Actuellement, j'élargis mon expertise vers la **cybersécurité** et j'ai pour objectif de me spécialiser dans les **tests de pénétration** d'ici quelques années. Cette évolution représente mon engagement à comprendre la technologie sous tous les angles - non seulement construire des applications sécurisées, mais aussi comprendre comment les protéger contre les menaces émergentes.
+## Pourquoi ce blog
 
-## Centres d'Intérêt
+J'y partage ce que j'apprends en construisant : développement web et mobile, sécurité applicative, et les coulisses d'une jeune entreprise tech africaine.
 
-Quand je ne code pas ou ne conçois pas, vous me trouverez en train de :
-- **Écrire des articles de blog tech** - Partager des connaissances et des insights avec la communauté des développeurs
-- **Écouter des livres audio** - Apprendre constamment et élargir mes horizons
-- **Faire du fitness** - Maintenir un équilibre sain entre l'esprit et le corps
+## Échangeons
 
-## Connectons-nous
-
-Ce blog est l'endroit où je partage mon parcours, mes insights techniques et mes réflexions sur le monde en constante évolution de la technologie. Que vous soyez ici pour apprendre sur le développement mobile, le design UI/UX ou la cybersécurité, j'espère que vous trouverez de la valeur dans mon contenu.
-
-N'hésitez pas à me contacter si vous souhaitez collaborer ou simplement discuter de technologie !
-
-Cordialement,
+Université, entreprise ou partenaire intéressé par nos produits ? Écrivez-moi depuis **[la page contact du portfolio](https://aresgn.sinda.pro/contact)** ou sur **[LinkedIn](https://bj.linkedin.com/in/ar%C3%A8s-gnimagnon-a239353b8/)**.
 
 **Arès GNIMAGNON**`;
 
 export async function generateMetadata() {
   return {
     title: "À Propos",
-    description: "Découvrez Arès GNIMAGNON - Développeur Mobile, Designer UI/UX et futur spécialiste en Cybersécurité du Bénin",
+    description: "Arès GNIMAGNON, fondateur et Directeur Général de SINDA SARL, ingénieur logiciel et pentesteur web en devenir, au Bénin.",
     openGraph: {
       title: "À Propos",
-      description: "Découvrez Arès GNIMAGNON - Développeur Mobile, Designer UI/UX et futur spécialiste en Cybersécurité du Bénin",
+      description: "Arès GNIMAGNON, fondateur et Directeur Général de SINDA SARL, ingénieur logiciel et pentesteur web en devenir, au Bénin.",
       images: [
         signOgImageUrl({
           title: "Arès GNIMAGNON",
